@@ -13,3 +13,10 @@ records = []  # array / list to store record objects
 with open(csv_path, newline="", encoding="utf-8") as file:
     reader = csv.DictReader(file)
 
+    for row in reader:
+        record = OystercatcherRecord(
+            row["Visit date"],
+            row["Site identification"],
+            row["Species"],
+            row["Total Black oystercatcher adults"]
+        )

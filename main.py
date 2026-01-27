@@ -1,21 +1,15 @@
 # main.py
 # Author: Saleha Qareen
-# Testing OystercatcherRecord class
 
+import csv
 from oystercatcher_record import OystercatcherRecord
 
-# Display your full name
-FULL_NAME = "Saleha Qareen"
-print(f"Program Author: {FULL_NAME}\n")
+print("Program Author: Saleha Qareen\n")
 
-# Create a sample record object manually
-sample_record = OystercatcherRecord(
-    visit_date="29/05/2008",
-    site_identification="1",
-    species="Haematopus bachmani",
-    total_black_oystercatcher_adults="6"
-)
+csv_path = r"C:\Users\saleh\Documents\Level 6\python\CST8002_PracticalProject_020_SalehaQareen\pacific_rim_npr_coastalmarine_black_oystercatcher_population_nesting_counts_2008-2017_data.csv"
 
-# Print the object to verify it works
-print("Sample Record:")
-print(sample_record)
+records = []  # array / list to store record objects
+
+with open(csv_path, newline="", encoding="utf-8") as file:
+    reader = csv.DictReader(file)
+

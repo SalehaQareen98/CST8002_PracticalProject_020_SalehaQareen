@@ -13,10 +13,14 @@ records = []  # array / list to store record objects
 # Implement exception handling for missing or inaccessible dataset file
 try:
     # Implement File I/O to open and read the CSV dataset at program startup
-    with open(csv_path, newline="", encoding="utf-8") as file:
+    with open(csv_path, newline="", encoding="latin-1") as file:
         reader = csv.DictReader(file)
-        # Parse dataset records into individual data fields
+
         for row in reader:
+            # Skip the second (French) header row
+            if row["Visit date"] == "Date de la visite":
+                continue
+
             record = OystercatcherRecord(
                 row["Visit date"],
                 row["Site identification"],
@@ -30,7 +34,7 @@ except FileNotFoundError:
     print("Error: Dataset file not found or inaccessible.")
 except KeyError as e:
     print(f"Error: Missing expected column in dataset: {e}")
-    
+
 # Loop to output record data on screen
 for record in records:
     print(record)

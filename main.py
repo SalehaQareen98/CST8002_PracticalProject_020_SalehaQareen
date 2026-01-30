@@ -30,5 +30,7 @@ except FileNotFoundError:
     print("Error: Dataset file not found or inaccessible.")
 except KeyError as e:
     print(f"Error: Missing expected column in dataset: {e}")
-
-
+    
+# Loop to output record data on screen
+for record in records:
+    print(record)

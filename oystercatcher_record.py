@@ -16,12 +16,35 @@ References:
 """
 
 class OystercatcherRecord:
+    """
+    Record object representing a single row from the
+    Black Oystercatcher Population dataset.
+
+    This class stores dataset fields as instance variables
+    and provides a string representation for display.
+    """
+
     def __init__(self, visit_date, site_identification, species, total_black_oystercatcher_adults):
+        """
+        Constructor for the OystercatcherRecord class.
+
+        Parameters:
+            visit_date (str): Date of site visit
+            site_identification (str): Site identifier
+            species (str): Species name
+            total_black_oystercatcher_adults (str): Adult oystercatcher count
+        """
         self.visit_date = visit_date
         self.site_identification = site_identification
         self.species = species
         self.total_black_oystercatcher_adults = total_black_oystercatcher_adults
 
     def __str__(self):
+        """
+        Returns a formatted string representation of the record.
+
+        Returns:
+            str: String record output
+        """
         return (f"Date: {self.visit_date}, Site ID: {self.site_identification}, "
                 f"Species: {self.species}, Total Adults: {self.total_black_oystercatcher_adults}")

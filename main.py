@@ -24,18 +24,29 @@ from oystercatcher_record import OystercatcherRecord
 
 print("\n=== Saleha Qareen - Practical Project 1 ===")
 
-
+"""
+csv_path:
+Constant that stores the absolute file path to the CSV dataset.
+"""
 csv_path = r"C:\Users\saleh\Documents\Level 6\python\CST8002_PracticalProject_020_SalehaQareen\pacific_rim_npr_coastalmarine_black_oystercatcher_population_nesting_counts_2008-2017_data.csv"
 
+"""
+records:
+List (array) used to store OystercatcherRecord objects.
+"""
 records = []  # array / list to store record objects
 
 # Implement exception handling for missing or inaccessible dataset file
 try:
-    # Implement File I/O to open and read the CSV dataset at program startup
+    """
+    Opens the CSV file and reads dataset contents using File-I/O.
+    """
     with open(csv_path, newline="", encoding="latin-1") as file:
         reader = csv.DictReader(file)
 
-        # Initialize only first 5 records 
+        """
+        Loop used to process the first few records from the dataset.
+        """
         for i, row in enumerate(reader):
             # Skip the French header row
             if row["Visit date"] == "Date de la visite":
@@ -54,10 +65,19 @@ try:
                 break
 
 except FileNotFoundError:
+    """
+    Handles missing or inaccessible dataset files.
+    """
     print("Error: Dataset file not found or inaccessible.")
+
 except KeyError as e:
+    """
+    Handles missing or incorrect column names in the dataset.
+    """
     print(f"Error: Missing expected column in dataset: {e}")
 
-# Loop to output record data on screen
+"""
+Loop used to output record data to the screen.
+"""
 for record in records:
     print(record)

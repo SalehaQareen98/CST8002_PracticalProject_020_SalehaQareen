@@ -8,15 +8,15 @@ Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
 
 References:
-[1]Y. Zharikov, “Black Oystercatcher Population - Pacific Rim - Open Government Portal,” Canada.ca, 2024. https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02. [Accessed: Jan. 29, 2026].
-[2] Python Software Foundation, “Python Documentation contents,” Python 3.13.11 documentation. [Online]. Available: https://docs.python.org/3.13/contents.html. [Accessed: Jan. 30, 2026].
-[3] Python Software Foundation, “Built-in Functions and Methods — Python 3.14.2 documentation,” Python Standard Library. [Online]. Available: https://docs.python.org/3/library/functions.html. [Accessed: Jan. 30, 2026].
-[4] Python Software Foundation, “Data Types That Support Iterators,” Python HOWTO Functional Programming. [Online]. Available: https://docs.python.org/3/howto/functional.html. [Accessed: Jan. 30, 2026].
-[5] Python Software Foundation, “7. Input and Output — Python 3.14.2 documentation,” The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html. [Accessed: Jan. 30, 2026].
-[6] Python Software Foundation, “4.3 Exceptions — Python 3.11.13 documentation,” Python Language Reference. [Online]. Available: https://docs.python.org/3.11/reference/executionmodel.html#exceptions. [Accessed: Jan. 30, 2026].
-[7] Python Software Foundation, “The Python Standard Library — Python 3.11.14 documentation,” Python Standard Library Reference. [Online]. Available: https://docs.python.org/3.11/library/. [Accessed: Jan. 30, 2026].
-[8] Python Software Foundation, “array — Efficient arrays of numeric values — Python 3.14.2 documentation,” Python Standard Library. [Online]. Available: https://docs.python.org/3/library/array.html. [Accessed: Jan. 30, 2026].
-[9] Python Software Foundation, “7. Input and Output,” Python documentation, Jan. 29, 2026. https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [accessed Jan. 29, 2026].
+[1] Y. Zharikov, “Black Oystercatcher Population – Pacific Rim – Open Government Portal,” Canada.ca. [Online]. Available: https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02 [Accessed: Jan. 29, 2026].
+[2] Python Software Foundation. (2024, Dec. 15). Python Documentation Contents. Python 3.13.11 Documentation. [Online]. Available: https://docs.python.org/3.13/contents.html [Accessed: Jan. 30, 2026].
+[3] Python Software Foundation. (2024, Dec. 15). Built-in Functions and Methods. Python Standard Library. [Online]. Available: https://docs.python.org/3/library/functions.html [Accessed: Jan. 30, 2026].
+[4] Python Software Foundation. (2024, Dec. 15). Data Types That Support Iterators. Python HOWTO – Functional Programming. [Online]. Available: https://docs.python.org/3/howto/functional.html [Accessed: Jan. 30, 2026].
+[5] Python Software Foundation. (2024, Dec. 15). Input and Output. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html [Accessed: Jan. 30, 2026].
+[6] Python Software Foundation. (2024, Dec. 15). Exceptions. Python Language Reference. [Online]. Available: https://docs.python.org/3.11/reference/executionmodel.html#exceptions [Accessed: Jan. 30, 2026].
+[7] Python Software Foundation. (2024, Dec. 15). The Python Standard Library. Python Standard Library Reference. [Online]. Available: https://docs.python.org/3.11/library/ [Accessed: Jan. 30, 2026].
+[8] Python Software Foundation. (2024, Dec. 15). array — Efficient Arrays of Numeric Values. Python Standard Library. [Online]. Available: https://docs.python.org/3/library/array.html [Accessed: Jan. 30, 2026].
+[9] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
 
 """
 import csv

@@ -8,10 +8,10 @@ Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
 
 References:
-[1]Y. Zharikov, “Black Oystercatcher Population - Pacific Rim - Open Government Portal,” Canada.ca, 2024. https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02. [Accessed: Jan. 29, 2026].
-[2] Python Software Foundation, “9. Classes — Python 3 Documentation,” The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/classes.html. [Accessed: Jan. 30, 2026].
-[3] Python Software Foundation, “9.3.1 Class Objects — Python 3 Documentation,” The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/classes.html#class-objects. [Accessed: Jan. 30, 2026].
-[4] Python Software Foundation, “3.3.1 Basic Customization — Python 3 Documentation,” Python Data Model. [Online]. Available: https://docs.python.org/3/reference/datamodel.html#object.__str__. [Accessed: Jan. 30, 2026].
+[1] Y. Zharikov, “Black Oystercatcher Population – Pacific Rim – Open Government Portal,” Canada.ca. [Online]. Available: https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02 [Accessed: Jan. 29, 2026].
+[2] Python Software Foundation. (2024, Dec. 15). Classes. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/classes.html [Accessed: Jan. 30, 2026].
+[3] Python Software Foundation. (2024, Dec. 15). Class Objects. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/classes.html#class-objects [Accessed: Jan. 30, 2026].
+[4] Python Software Foundation. (2024, Dec. 15). Basic Customization (__str__). Python Data Model. [Online]. Available: https://docs.python.org/3/reference/datamodel.html#object.__str__ [Accessed: Jan. 30, 2026].
 
 """
 

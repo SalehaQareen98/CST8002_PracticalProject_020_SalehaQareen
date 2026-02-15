@@ -20,7 +20,7 @@ References:
 
 """
 import csv
-from oystercatcher_record import OystercatcherRecord
+from model.oystercatcher_record import OystercatcherRecord
 
 print("\n=== Saleha Qareen - Practical Project 1 ===")
 

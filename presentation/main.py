@@ -19,65 +19,67 @@ References:
 [9] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
 
 """
-import csv
+
+from business.record_manager import RecordManager
 from model.oystercatcher_record import OystercatcherRecord
 
-print("\n=== Saleha Qareen - Practical Project 1 ===")
+def display_full_name():
+ print("\n=== Saleha Qareen - Practical Project 2 ===")
 
-"""
-csv_path:
-Constant that stores the absolute file path to the CSV dataset.
-"""
-csv_path = r"C:\Users\saleh\Documents\Level 6\python\CST8002_PracticalProject_020_SalehaQareen\pacific_rim_npr_coastalmarine_black_oystercatcher_population_nesting_counts_2008-2017_data.csv"
+def main():
+    manager = RecordManager()
+    csv_path = r"data/pacific_rim_npr_coastalmarine_black_oystercatcher_population_nesting_counts_2008-2017_data.csv"
 
-"""
-records:
-List (array) used to store OystercatcherRecord objects.
-"""
-records = []  # array / list to store record objects
+    while True:
+        display_full_name()
+        print("=== Black Oystercatcher Data Management ===")
+        print("1. Reload dataset")
+        print("2. Save dataset to new CSV (UUID)")
+        print("3. Display a single record")
+        print("4. Display all records")
+        print("5. Add new record")
+        print("6. Edit a record")
+        print("7. Delete a record")
+        print("8. Exit")
 
-# Implement exception handling for missing or inaccessible dataset file
-try:
-    """
-    Opens the CSV file and reads dataset contents using File-I/O.
-    """
-    with open(csv_path, newline="", encoding="latin-1") as file:
-        reader = csv.DictReader(file)
+        choice = input("Select an option (1-8): ")
 
-        """
-        Loop used to process the first few records from the dataset.
-        """
-        for i, row in enumerate(reader):
-            # Skip the French header row
-            if row["Visit date"] == "Date de la visite":
-                continue
+        if choice == "1":
+            # TODO: reload dataset
+            print("[Placeholder] Reload dataset functionality")
 
-            record = OystercatcherRecord(
-                row["Visit date"],
-                row["Site identification"],
-                row["Species"],
-                row["Total Black oystercatcher adults"]
-            )
-            # Store record objects in an array or list data structure
-            records.append(record)
+        elif choice == "2":
+            # TODO: save data to CSV using UUID
+            print("[Placeholder] Save dataset to CSV functionality")
 
-            if i == 5:  # stop after first 5 data rows
-                break
+        elif choice == "3":
+            # TODO: select and display single record
+            print("[Placeholder] Display single record functionality")
 
-except FileNotFoundError:
-    """
-    Handles missing or inaccessible dataset files.
-    """
-    print("Error: Dataset file not found or inaccessible.")
+        elif choice == "4":
+            # TODO: select and display multiple records
+            print("[Placeholder] Display all records functionality")
 
-except KeyError as e:
-    """
-    Handles missing or incorrect column names in the dataset.
-    """
-    print(f"Error: Missing expected column in dataset: {e}")
+        elif choice == "5":
+            # TODO: create new record
+            print("[Placeholder] Add new record functionality")
 
-"""
-Loop used to output record data to the screen.
-"""
-for record in records:
-    print(record)
+        elif choice == "6":
+            # TODO: edit a record
+            print("[Placeholder] Edit record functionality")
+
+        elif choice == "7":
+            # TODO: delete a record
+            print("[Placeholder] Delete record functionality")
+
+        elif choice == "8":
+            print("Exiting program.")
+            break
+
+        else:
+            print("Invalid option. Please select 1-8.")
+
+        input("\nPress Enter to continue...")
+
+if __name__ == "__main__":
+    main()

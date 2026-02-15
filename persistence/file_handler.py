@@ -1,8 +1,13 @@
 # persistence/file_handler.py
 """
-@author: Saleha Qareen (041161192)
-@date: 2026-02-15
-Handles file reading and writing for OystercatcherRecord objects.
+CST8002 Programming Language Research - Practical Project Part 2
+Author: Saleha Qareen (041161192)
+Professor: Stanley Pieda 
+Date: 2026-02-01
+
+Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
+License: Black Oystercatcher Population - Pacific Rim [1]
+
 References:
 [1] Y. Zharikov, “Black Oystercatcher Population – Pacific Rim – Open Government Portal,” Canada.ca. [Online]. Available: https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02 [Accessed: Jan. 29, 2026].
 [2] Python Software Foundation. (2026, Feb. 14). uuid — UUID objects according to RFC 4122. docs.python.org. [Online]. Available: https://docs.python.org/3/library/uuid.html [Accessed: Feb. 15, 2026].

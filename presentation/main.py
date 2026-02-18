@@ -45,8 +45,13 @@ def main():
         choice = input("Select an option (1-8): ")
 
         if choice == "1":
-            # TODO: reload dataset
-            print("[Placeholder] Reload dataset functionality")
+            try:
+                manager.reload_data(csv_path)
+                print("Dataset reloaded successfully.")
+            except Exception as e:
+                print(f"Error reloading dataset: {e}")
+            
+            # print("[Placeholder] Reload dataset functionality")
 
         elif choice == "2":
             # TODO: save data to CSV using UUID

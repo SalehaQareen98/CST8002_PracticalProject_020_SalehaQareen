@@ -57,9 +57,20 @@ def main():
             print(f"Data saved to new file: {filename}")
 
         elif choice == "3":
-            # TODO: select and display single record
-            print("[Placeholder] Display single record functionality")
+            # Select and display a single record by index, handling invalid index input
+            try:
+                index = int(input("Enter record index: "))
+                record = manager.get_record(index)
 
+                if record is not None:
+                    print("\nRecord found:")
+                    print(record)
+                else:
+                    print("Invalid index. Record not found.")
+
+            except ValueError:
+                print("Please enter a valid integer index.")
+                
         elif choice == "4":
             # TODO: select and display multiple records
             print("[Placeholder] Display all records functionality")

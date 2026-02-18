@@ -46,5 +46,5 @@ class OystercatcherRecord:
         Returns:
             str: String record output
         """
-        return (f"Date: {self.visit_date}, Site ID: {self.site_identification}, "
-                f"Species: {self.species}, Total Adults: {self.total_black_oystercatcher_adults}")
+        return (f"Date: {self.visit_date}, Site Identification: {self.site_identification}, "
+                f"Species: {self.species}, Total Black oystercatcher adults: {self.total_black_oystercatcher_adults}")

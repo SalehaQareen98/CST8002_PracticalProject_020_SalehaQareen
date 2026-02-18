@@ -43,19 +43,18 @@ def main():
         print("8. Exit")
 
         choice = input("Select an option (1-8): ")
-
+        # Reload dataset from CSV file and handle exceptions for missing or inaccessible files
         if choice == "1":
             try:
                 manager.reload_data(csv_path)
                 print("Dataset reloaded successfully.")
             except Exception as e:
                 print(f"Error reloading dataset: {e}")
-            
-            # print("[Placeholder] Reload dataset functionality")
-
+                
         elif choice == "2":
-            # TODO: save data to CSV using UUID
-            print("[Placeholder] Save dataset to CSV functionality")
+            # Persist in-memory data to new CSV file using UUID for filename and handle exceptions for file writing issues
+            filename = manager.save_data()
+            print(f"Data saved to new file: {filename}")
 
         elif choice == "3":
             # TODO: select and display single record

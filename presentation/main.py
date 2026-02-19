@@ -72,6 +72,7 @@ def main():
                 print("Please enter a valid integer index.")
                 
         elif choice == "4":
+            # Select and display multiple records
                 records = manager.get_all_records()
 
                 if len(records) == 0:
@@ -83,8 +84,20 @@ def main():
                         print(f"[{i}] {record}")
                         
         elif choice == "5":
-            # TODO: create new record
-            print("[Placeholder] Add new record functionality")
+            visit_date = input("Enter Visit date: ")
+            site_identification = input("Enter Site identification: ")
+            species = input("Enter Species: ")
+            total_black_oystercatcher_adults = input("Enter Total Black oystercatcher adults: ")
+
+            new_record = OystercatcherRecord(
+                visit_date=visit_date,
+                site_identification=site_identification,
+                species=species,
+                total_black_oystercatcher_adults=total_black_oystercatcher_adults
+            )
+
+            manager.add_record(new_record)
+            print("New record added to memory.")
 
         elif choice == "6":
             # TODO: edit a record

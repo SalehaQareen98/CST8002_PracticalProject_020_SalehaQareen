@@ -131,8 +131,17 @@ def main():
                 print("Please enter a valid integer index.")
 
         elif choice == "7":
-            # TODO: delete a record
-            print("[Placeholder] Delete record functionality")
+            try:
+                index = int(input("Enter record index to delete: "))
+                success = manager.delete_record(index)
+
+                if success:
+                    print("Record deleted successfully.")
+                else:
+                    print("Invalid index. Record not found.")
+
+            except ValueError:
+                print("Please enter a valid integer index.")
 
         elif choice == "8":
             print("Exiting program.")

@@ -72,9 +72,16 @@ def main():
                 print("Please enter a valid integer index.")
                 
         elif choice == "4":
-            # TODO: select and display multiple records
-            print("[Placeholder] Display all records functionality")
+                records = manager.get_all_records()
 
+                if len(records) == 0:
+                    print("No records in memory. Reload dataset first.")
+                else:
+                    for i, record in enumerate(records):
+                        if i % 10 == 0:
+                            display_full_name()  # keeps your name visible in long outputs
+                        print(f"[{i}] {record}")
+                        
         elif choice == "5":
             # TODO: create new record
             print("[Placeholder] Add new record functionality")
@@ -94,7 +101,7 @@ def main():
         else:
             print("Invalid option. Please select 1-8.")
 
-        input("\nPress Enter to continue...")
+        # input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()

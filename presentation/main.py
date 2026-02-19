@@ -84,7 +84,7 @@ def main():
                         print(f"[{i}] {record}")
                         
         elif choice == "5":
-            visit_date = input("Enter Visit date: ")
+            visit_date = input("Enter Visit date:[DD/MM/YYYY] ")
             site_identification = input("Enter Site identification: ")
             species = input("Enter Species: ")
             total_black_oystercatcher_adults = input("Enter Total Black oystercatcher adults: ")
@@ -100,8 +100,35 @@ def main():
             print("New record added to memory.")
 
         elif choice == "6":
-            # TODO: edit a record
-            print("[Placeholder] Edit record functionality")
+            try:
+                index = int(input("Enter record index to edit: "))
+                existing = manager.get_record(index)
+
+                if existing is None:
+                    print("Invalid index. Record not found.")
+                else:
+                    print("Enter new values:")
+
+                    visit_date = input(f"Visit date [{existing.visit_date}]: ")
+                    site_identification = input(f"Site identification [{existing.site_identification}]: ")
+                    species = input(f"Species [{existing.species}]: ")
+                    total_adults = input(f"Total Black oystercatcher adults [{existing.total_black_oystercatcher_adults}]: ")
+                    
+                    updated_record = OystercatcherRecord(
+                        visit_date = visit_date,
+                        site_identification = site_identification,
+                        species = species,
+                        total_black_oystercatcher_adults = total_adults
+                    )
+
+                    success = manager.edit_record(index, updated_record)
+                    if success:
+                        print("Record updated successfully.")
+                    else:
+                        print("Record update failed.")
+
+            except ValueError:
+                print("Please enter a valid integer index.")
 
         elif choice == "7":
             # TODO: delete a record

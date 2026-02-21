@@ -1,9 +1,8 @@
-# persistence/file_handler.py
 """
 CST8002 Programming Language Research - Practical Project Part 2
 Author: Saleha Qareen (041161192)
 Professor: Stanley Pieda 
-Date: 2026-02-01
+Date: 2026-02-20
 
 Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
@@ -11,7 +10,11 @@ License: Black Oystercatcher Population - Pacific Rim [1]
 References:
 [1] Y. Zharikov, “Black Oystercatcher Population – Pacific Rim – Open Government Portal,” Canada.ca. [Online]. Available: https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02 [Accessed: Jan. 29, 2026].
 [2] Python Software Foundation. (2026, Feb. 14). uuid — UUID objects according to RFC 4122. docs.python.org. [Online]. Available: https://docs.python.org/3/library/uuid.html [Accessed: Feb. 15, 2026].
-[3] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
+[3] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
+[4] Python Software Foundation. (2024, Dec. 15). Input and Output. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html [Accessed: Jan. 30, 2026].
+[5] Python Software Foundation. (2024, Dec. 15). Exceptions. docs.python.org. [Online]. Available: https://docs.python.org/3.11/reference/executionmodel.html#exceptions [Accessed: Jan. 30, 2026].
+[6] Python Software Foundation. (2024, Dec. 15). The Python Standard Library. docs.python.org. [Online]. Available: https://docs.python.org/3.11/library/ [Accessed: Jan. 30, 2026].
+[7] Python Software Foundation. (2024, Dec. 15). Built-in Types — list. docs.python.org. [Online]. Available: https://docs.python.org/3/library/stdtypes.html#list [Accessed: Feb. 20, 2026].
 
 """
 

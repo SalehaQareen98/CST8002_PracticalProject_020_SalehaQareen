@@ -1,9 +1,8 @@
-# business/record_manager.py
 """
 CST8002 Programming Language Research - Practical Project Part 2
 Author: Saleha Qareen (041161192)
 Professor: Stanley Pieda 
-Date: 2026-02-01
+Date: 2026-02-20
 
 Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
@@ -13,6 +12,7 @@ References:
 [2] Python Software Foundation. (2024, Dec. 15). Python Documentation Contents. docs.python.org. [Online]. Available: https://docs.python.org/3.13/contents.html [Accessed: Jan. 30, 2026].
 [3] Python Software Foundation. (2024, Dec. 15). Built-in Functions and Methods. docs.python.org. [Online]: https://docs.python.org/3/library/functions.html [Accessed: Jan. 30, 2026].
 [4] Python Software Foundation. (2024, Dec. 15). Data Types That Support Iterators. docs.python.org. [Online]. Available: https://docs.python.org/3/howto/functional.html [Accessed: Jan. 30, 2026].
+[5] Python Software Foundation. (2024, Dec. 15). Built-in Types — list. docs.python.org. [Online]. Available: https://docs.python.org/3/library/stdtypes.html#list [Accessed: Feb. 20, 2026].
 
 """
 from persistence.file_handler import FileHandler

@@ -1,8 +1,8 @@
 """
-CST8002 Programming Language Research - Practical Project Part 1
+CST8002 Programming Language Research - Practical Project Part 2
 Author: Saleha Qareen (041161192)
 Professor: Stanley Pieda 
-Date: 2026-02-01
+Date: 2026-02-20
 
 Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
@@ -15,8 +15,8 @@ References:
 [5] Python Software Foundation. (2024, Dec. 15). Input and Output. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html [Accessed: Jan. 30, 2026].
 [6] Python Software Foundation. (2024, Dec. 15). Exceptions. Python Language Reference. [Online]. Available: https://docs.python.org/3.11/reference/executionmodel.html#exceptions [Accessed: Jan. 30, 2026].
 [7] Python Software Foundation. (2024, Dec. 15). The Python Standard Library. Python Standard Library Reference. [Online]. Available: https://docs.python.org/3.11/library/ [Accessed: Jan. 30, 2026].
-[8] Python Software Foundation. (2024, Dec. 15). array — Efficient Arrays of Numeric Values. Python Standard Library. [Online]. Available: https://docs.python.org/3/library/array.html [Accessed: Jan. 30, 2026].
-[9] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
+[8] Python Software Foundation. (2024, Dec. 15). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
+[9] Python Software Foundation. (2024, Dec. 15). Built-in Types — list. docs.python.org. [Online]. Available: https://docs.python.org/3/library/stdtypes.html#list [Accessed: Feb. 20, 2026].
 
 """
 
@@ -24,9 +24,28 @@ from business.record_manager import RecordManager
 from model.oystercatcher_record import OystercatcherRecord
 
 def display_full_name():
- print("\n=== Saleha Qareen - Practical Project 2 ===")
+    """
+    Displays the program author's full name.
+
+    This ensures the student's name remains visible during
+    user interaction and program output, as required in
+    Practical Project Part 2 documentation guidelines.
+    """
+    print("\n=== Saleha Qareen - Practical Project 2 ===")
 
 def main():
+    """
+    Main entry point of the Presentation Layer.
+
+    Responsibilities:
+    - Displays interactive menu options
+    - Handles user input
+    - Calls Business Layer methods
+    - Displays results to the user
+
+    All file operations and data storage logic are delegated
+    to the appropriate layers to maintain N-Layered architecture.
+    """
     manager = RecordManager()
     csv_path = r"data/pacific_rim_npr_coastalmarine_black_oystercatcher_population_nesting_counts_2008-2017_data.csv"
 
@@ -73,15 +92,15 @@ def main():
                 
         elif choice == "4":
             # Select and display multiple records
-                records = manager.get_all_records()
+            records = manager.get_all_records()
 
-                if len(records) == 0:
-                    print("No records in memory. Reload dataset first.")
-                else:
-                    for i, record in enumerate(records):
-                        if i % 10 == 0:
-                            display_full_name()  # keeps your name visible in long outputs
-                        print(f"[{i}] {record}")
+            if len(records) == 0:
+                print("No records in memory. Reload dataset first.")
+            else:
+                for i, record in enumerate(records):
+                    if i % 10 == 0:
+                        display_full_name()  # keeps your name visible in long outputs
+                    print(f"[{i}] {record}")
                         
         elif choice == "5":
             visit_date = input("Enter Visit date:[DD/MM/YYYY] ")
@@ -149,8 +168,6 @@ def main():
 
         else:
             print("Invalid option. Please select 1-8.")
-
-        # input("\nPress Enter to continue...")
 
 if __name__ == "__main__":
     main()

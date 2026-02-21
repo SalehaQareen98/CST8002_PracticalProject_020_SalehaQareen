@@ -19,6 +19,14 @@ from model.oystercatcher_record import OystercatcherRecord
 
 
 def test_add_record():
+    """
+    Unit test to verify that a new record can be added
+    to the sequential data structure in memory.
+
+    This test confirms:
+    - A record is successfully inserted into the list.
+    - The stored record fields match the expected values.
+    """
     # Create instance of Business Layer (sequential data structure stored here)
     manager = RecordManager()
 

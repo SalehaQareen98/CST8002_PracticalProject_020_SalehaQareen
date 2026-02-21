@@ -4,14 +4,14 @@ Author: Saleha Qareen (041161192)
 Professor: Stanley Pieda 
 Date: 2026-02-20
 
-Dataset: Pacific Rim Native Amphibians (Open Government Licence - Canada)
+Dataset: Black Oystercatcher Population – Pacific Rim (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
 
 References:
-[1] Y. Zharikov, “Black Oystercatcher Population – Pacific Rim – Open Government Portal,” open.canada.ca. [Online]. Available: https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02 [Accessed: Jan. 29, 2026].
-[2] Python Software Foundation. (2024, Dec. 15). Classes. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html [Accessed: Jan. 30, 2026].
-[3] Python Software Foundation. (2024, Dec. 15). Class Objects. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html#class-objects [Accessed: Jan. 30, 2026].
-[4] Python Software Foundation. (2024, Dec. 15). Basic Customization (__str__). docs.python.org. [Online]. Available: https://docs.python.org/3/reference/datamodel.html#object.__str__ [Accessed: Jan. 30, 2026].
+[1] Parks Canada. (Oct 1, 2017). Black Oystercatcher Population – Pacific Rim. open.canada.ca. [online] Available at https://open.canada.ca/data/en/dataset/d87383f6-5313-430d-8416-1b6d6e377e02  [Accessed: Jan. 29, 2026].
+[2] Python Software Foundation. (n.d). Classes. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html [Accessed: Jan. 30, 2026].
+[3] Python Software Foundation. (n.d). Class Objects. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html#class-objects [Accessed: Jan. 30, 2026].
+[4] Python Software Foundation. (n.d). Basic Customization (__str__). docs.python.org. [Online]. Available: https://docs.python.org/3/reference/datamodel.html#object.__str__ [Accessed: Jan. 30, 2026].
 
 """
 

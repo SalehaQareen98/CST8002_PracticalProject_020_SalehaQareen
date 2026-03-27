@@ -17,7 +17,6 @@ References:
 [7] Python Software Foundation. (n.d). The Python Standard Library. Python Standard Library Reference. [Online]. Available: https://docs.python.org/3.11/library/ [Accessed: Jan. 30, 2026].
 [8] Python Software Foundation. (n.d). Reading and Writing Files. The Python Tutorial. [Online]. Available: https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files [Accessed: Jan. 29, 2026].
 [9] Python Software Foundation. (n.d). Built-in Types — list. docs.python.org. [Online]. Available: https://docs.python.org/3/library/stdtypes.html#list [Accessed: Feb. 20, 2026].
-
 """
 
 from business.record_manager import RecordManager
@@ -31,7 +30,7 @@ def display_full_name():
     user interaction and program output, as required in
     Practical Project Part 2 documentation guidelines.
     """
-    print("\n=== Saleha Qareen - Practical Project 2 ===")
+    print("\n=== Saleha Qareen - Practical Project 3 ===")
 
 def main():
     """

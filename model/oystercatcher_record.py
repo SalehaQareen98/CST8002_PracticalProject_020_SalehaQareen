@@ -1,8 +1,8 @@
 """
-CST8002 Programming Language Research - Practical Project Part 2
+CST8002 Programming Language Research - Practical Project Part 3
 Author: Saleha Qareen (041161192)
-Professor: Stanley Pieda 
-Due Date: 2026-02-22
+Professor: Stanley Pieda
+Due Date: 2026-03-29
 
 Dataset: Black Oystercatcher Population – Pacific Rim (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
@@ -12,7 +12,6 @@ References:
 [2] Python Software Foundation. (n.d). Classes. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html [Accessed: Jan. 30, 2026].
 [3] Python Software Foundation. (n.d). Class Objects. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/classes.html#class-objects [Accessed: Jan. 30, 2026].
 [4] Python Software Foundation. (n.d). Basic Customization (__str__). docs.python.org. [Online]. Available: https://docs.python.org/3/reference/datamodel.html#object.__str__ [Accessed: Jan. 30, 2026].
-
 """
 
 class OystercatcherRecord:

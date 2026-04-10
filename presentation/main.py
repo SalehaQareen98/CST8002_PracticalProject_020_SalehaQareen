@@ -30,7 +30,7 @@ def display_full_name():
     user interaction and program output, as required in
     Practical Project Part 2 documentation guidelines.
     """
-    print("\n=== Saleha Qareen - Practical Project 3 ===")
+    print("\n=== Saleha Qareen - Practical Project 4 ===")
 
 def main():
     """
@@ -58,9 +58,10 @@ def main():
         print("5. Add new record")
         print("6. Edit a record")
         print("7. Delete a record")
-        print("8. Exit")
+        print("8. Sort records using multiple columns")
+        print("9. Exit")
 
-        choice = input("Select an option (1-8): ")
+        choice = input("Select an option (1-9): ")
         # Reload dataset from CSV file and handle exceptions for missing or inaccessible files
         if choice == "1":
             try:
@@ -162,11 +163,49 @@ def main():
                 print("Please enter a valid integer index.")
 
         elif choice == "8":
+            print("\nSort by selecting two columns from the dataset:")
+            print("1. Visit date")
+            print("2. Site identification")
+            print("3. Species")
+            print("4. Total Black oystercatcher adults")
+
+            column_map = {
+                "1": "Visit date",
+                "2": "Site identification",
+                "3": "Species",
+                "4": "Total Black oystercatcher adults"
+            }
+
+            primary_choice = input("Select primary sort column (1-4): ")
+            secondary_choice = input("Select secondary sort column (1-4): ")
+
+            primary_column = column_map.get(primary_choice)
+            secondary_column = column_map.get(secondary_choice)
+
+            if primary_column is None or secondary_column is None:
+                print("Invalid column selection. Please choose options 1-4.")
+            else:
+                try:
+                    sorted_records = manager.sort_records(primary_column, secondary_column)
+
+                    if len(sorted_records) == 0:
+                        print("No records in memory. Reload dataset first.")
+                    else:
+                        print(f"\nRecords sorted by {primary_column} and then {secondary_column}:\n")
+                        for i, record in enumerate(sorted_records):
+                            if i % 10 == 0:
+                                display_full_name()
+                            print(f"[{i}] {record}")
+
+                except ValueError as e:
+                    print(f"Sorting error: {e}")
+
+        elif choice == "9":
             print("Exiting program.")
             break
 
         else:
-            print("Invalid option. Please select 1-8.")
+            print("Invalid option. Please select 1-9.")
 
 if __name__ == "__main__":
     main()

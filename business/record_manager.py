@@ -22,6 +22,7 @@ from persistence.file_handler import FileHandler
 from model.oystercatcher_record import OystercatcherRecord
 from business.singly_linked_list import SinglyLinkedList
 from typing import Optional
+from datetime import datetime
 
 
 class RecordManager:
@@ -121,6 +122,76 @@ class RecordManager:
             return True
         except IndexError:
             return False
+
+
+    def _normalize_sort_value(self, record: OystercatcherRecord, column_name: str):
+        """
+        Converts a record field into a sortable value based on the selected column.
+
+        Args:
+            record: The record being sorted.
+            column_name: Dataset column name selected by the user.
+
+        Returns:
+            A normalized value suitable for sorting.
+        """
+        field_map = {
+            "Visit date": record.visit_date,
+            "Site identification": record.site_identification,
+            "Species": record.species,
+            "Total Black oystercatcher adults": record.total_black_oystercatcher_adults,
+        }
+
+        value = field_map[column_name]
+
+        if column_name == "Total Black oystercatcher adults":
+            try:
+                return int(value)
+            except (TypeError, ValueError):
+                return float('inf')
+
+        if column_name == "Visit date":
+            for date_format in ("%d/%m/%Y", "%Y-%m-%d", "%m/%d/%Y"):
+                try:
+                    return datetime.strptime(str(value), date_format)
+                except ValueError:
+                    continue
+
+        return str(value).strip().lower()
+
+    def sort_records(self, primary_column: str, secondary_column: str) -> list[OystercatcherRecord]:
+        """
+        Returns records sorted by two dataset columns.
+
+        Args:
+            primary_column: The main dataset column used for sorting.
+            secondary_column: The second dataset column used when values in the
+                primary column are the same.
+
+        Returns:
+            A new list of sorted OystercatcherRecord objects.
+
+        Raises:
+            ValueError: If either selected column name is invalid.
+        """
+        valid_columns = [
+            "Visit date",
+            "Site identification",
+            "Species",
+            "Total Black oystercatcher adults",
+        ]
+
+        if primary_column not in valid_columns or secondary_column not in valid_columns:
+            raise ValueError("Invalid column name selected for sorting.")
+
+        records = self.records.get_all()
+        return sorted(
+            records,
+            key=lambda record: (
+                self._normalize_sort_value(record, primary_column),
+                self._normalize_sort_value(record, secondary_column),
+            ),
+        )
 
     def save_data(self) -> str:
         """

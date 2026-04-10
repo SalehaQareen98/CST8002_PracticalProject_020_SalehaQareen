@@ -1,8 +1,9 @@
 """
-CST8002 Programming Language Research - Practical Project Part 3
+CST8002 Programming Language Research - Practical Project Part 4
 Author: Saleha Qareen (041161192)
 Professor: Stanley Pieda
-Due Date: 2026-03-29
+Due Date: April 12, 2026
+
 
 Dataset: Black Oystercatcher Population – Pacific Rim (Open Government Licence - Canada)
 License: Black Oystercatcher Population - Pacific Rim [1]
@@ -16,6 +17,8 @@ References:
 [6] GeeksforGeeks. (2024, Jan. 10). Linked List Data Structure. geeksforgeeks.org [Online].Available: https://www.geeksforgeeks.org/data-structures/linked-list/ [Accessed: Mar. 11, 2026].
 [7] Python Software Foundation. (n.d.). Data Structures. docs.python.org. [Online]. Available: https://docs.python.org/3/tutorial/datastructures.html [Accessed: Mar. 11, 2026].
 [8] GeeksforGeeks. (2025, Jul. 15). Types of Linked List. geeksforgeeks.org [Online]. Available: https://www.geeksforgeeks.org/dsa/types-of-linked-list/ [Accessed: Mar. 11, 2026].
+[9] Python Software Foundation. (2024, Oct. 16). Sorting HOW TO. Python Documentation. [Online]. Available: https://docs.python.org/3/howto/sorting.html [Accessed: Apr. 2, 2026].
+[10] GeeksforGeeks. (2024, Jan. 15). Sort a list of objects by multiple attributes in Python. GeeksforGeeks. [Online]. Available: https://www.geeksforgeeks.org/sort-a-list-of-objects-by-multiple-attributes-in-python/ [Accessed: Apr. 2, 2026].
 """
 
 from persistence.file_handler import FileHandler
